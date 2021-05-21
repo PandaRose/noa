@@ -90,10 +90,10 @@ function Rendering(noa, opts, canvas) {
 function initScene(self, canvas, opts) {
 
     // init internal properties
-    self._engine = new Engine(canvas, opts.antiAlias, {
+    self._engine = opts.engine || new Engine(canvas, opts.antiAlias, {
         preserveDrawingBuffer: opts.preserveDrawingBuffer,
     })
-    self._scene = new Scene(self._engine)
+    self._scene = opts.scene || new Scene(self._engine)
     var scene = self._scene
     // remove built-in listeners
     scene.detachControl()
