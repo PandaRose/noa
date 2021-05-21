@@ -1,5 +1,5 @@
 {
-    "name": "noa-engine",
+    "name": "@pandarose/noa-engine",
     "version": "0.28.0",
     "description": "Experimental voxel game engine",
     "main": "src/index.js",
